@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grade System Cal.GPA</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to styles.css -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> Student Grade System Cal. GPA</h1>
+        </header>
+        <main>
+            <form id="gradeForm">
+                <div class="input-group">
+                    <label for="studentName">Student Name</label>
+                    <input type="text" id="studentName" placeholder="Enter student name" required>
+                </div>
+                <div class="subjects">
+                    <label>Enter Grades for 7 Subjects:</label>
+                    <input type="number" class="subjectGrade" placeholder="Math (3 credit hours)" required min="0" max="100">
+                    <input type="number" class="subjectGrade" placeholder="Emerging (3 credit hours)" required min="0" max="100">
+                    <input type="number" class="subjectGrade" placeholder="English (3 credit hours)" required min="0" max="100">
+                    <input type="number" class="subjectGrade" placeholder="Programming (3 credit hours)" required min="0" max="100">
+                    <input type="number" class="subjectGrade" placeholder="Inclusiveness (2 credit hours)" required min="0" max="100">
+                    <input type="number" class="subjectGrade" placeholder="Anthropology (2 credit hours)" required min="0" max="100">
+                    <input type="number" class="subjectGrade" placeholder="Civics (2 credit hours)" required min="0" max="100">
+                </div>
+                <button type="submit">Calculate Grade</button>
+            </form>
+
+            <div class="grade-display">
+                <h2>Grade List</h2>
+                <table id="gradeTable">
+                    <thead>
+                        <tr>
+                            <th> Student Name</th>
+                            <th>Grades</th>
+                            <th> by Letter</th>
+                            <th>Average</th>
+                            <th>GPA</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script> <!-- Link to script.js -->
+</body>
+</html>
